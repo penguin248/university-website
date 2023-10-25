@@ -24,8 +24,8 @@
             src="https://clipart-library.com/images_k/computer-transparent-image/computer-transparent-image-5.png"
             alt="logo"
         /></a>
-        <div class="nav-links">
-          <i class="fa fa-times"></i>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -34,7 +34,7 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1>World's Biggest University</h1>
@@ -45,5 +45,62 @@
         <a href="" class="hero-btn">Visit Us To Know More</a>
       </div>
     </section>
+
+    <!--Course-->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        At our institution, we offer a diverse range of courses designed to
+        empower individuals with knowledge and skills for personal growth and
+        career advancement. Our course offerings span various fields, from
+        business and technology to arts and sciences. Whether you're looking to
+        enhance your professional expertise, explore new passions, or embark on
+        a journey of lifelong learning, our courses are tailored to meet your
+        educational needs.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Unlock Your Potential with Our Intermediate Course! Ready to take
+            your skills to the next level? Our intermediate course is designed
+            to help you soar above the basics and dive deeper into your chosen
+            field. Explore complex concepts, refine your knowledge, and gain the
+            expertise you need to excel.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Elevate Your Future with Our Degree Program! Dreaming of a brighter
+            tomorrow? Our degree program is your gateway to a world of
+            opportunities. With a well-rounded curriculum and expert guidance,
+            you'll deepen your knowledge and skills, setting the stage for a
+            fulfilling and rewarding career.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Empower Your Expertise with Our Postgraduate Program! Ready to push
+            the boundaries of knowledge and expertise? Our postgraduate program
+            is designed for visionaries like you. Dive into advanced studies,
+            cutting-edge research, and specialized training to become a true
+            expert in your field.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Javascript for toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>

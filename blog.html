@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University courses</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img
+            src="https://clipart-library.com/images_k/computer-transparent-image/computer-transparent-image-5.png"
+            alt="logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificate & Online Programs For 2023</h1>
+    </section>
+
+    <!--Blog page content-->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img
+            src="https://images.unsplash.com/photo-1494426383302-7b9d36a1a028?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Certificate image"
+          />
+          <h2>Our Certificate & Online Programs For 2023</h2>
+          <p>
+            Elevate your career prospects with world-class certification and
+            online programs at the World's Largest University, a top-ranked
+            institution known for excellence in education and innovation.
+          </p>
+          <br />
+          <p>
+            Our meticulously designed online programs offer the perfect blend of
+            flexibility and quality, allowing you to acquire new skills, earn
+            valuable certifications, and advance your career from anywhere in
+            the world. With renowned faculty, cutting-edge curriculum, and a
+            commitment to delivering the best in virtual education.
+          </p>
+          <br />
+          <p>
+            Whether you're looking to upskill, change careers, or simply explore
+            new horizons, our online programs provide the expertise you need to
+            thrive in the modern professional landscape. Join us and unlock your
+            potential with our prestigious certifications and online courses
+            today!
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a Comment</h3>
+            <form action="" class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your Comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science </span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>25</span>
+            </div>
+            <div>
+                <span>Information Technology</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Statistics</span>
+                <span>18</span>
+            </div>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Facilities-->
+
+    <!--Footer-->
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        The world's largest university is a prestigious institution of higher
+        learning that has set the global standard for education and research.<br />
+        With a rich history dating back to its establishment, the university has
+        consistently<br />
+        demonstrated an unwavering commitment to academic excellence,
+        innovation, and diversity.<br />
+        Its diverse student body hails from every corner of the world,
+        contributing to a vibrant and inclusive community.<br />
+        Faculty members are renowned experts in their fields, conducting
+        groundbreaking research that has a far-reaching impact.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Penguin</p>
+    </section>
+
+    <!--Javascript for toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
